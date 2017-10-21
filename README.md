@@ -4,4 +4,4 @@ This is an SPI Library for the BeagleBone that consists of the API's to configur
 
 Please find more information on this Library at: http://deeplyembedded.org/spi-library-beaglebone/
 
-GitHub: https://github.com/deeplyembeddedWP/BeagleBone_SPI_Library
+GitHub: https://github.com/deeplyembeddedWP/BeagleBone-SPI-Library
