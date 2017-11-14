@@ -149,11 +149,13 @@ void SPI_Config_init(unsigned long spi_bytes_no, unsigned long spi_bus_speed,
  * Returns       : 0 on success, -1 on failure
  * Params        : None
  ****************************************************************/
-int SPI_DEV1_init()
+int SPI_DEV1_init(unsigned long spi_bytes_no, unsigned long spi_bus_speed,
+                                           unsigned char chip_select, unsigned short spi_delay,
+                                           unsigned char spi_bits_No, unsigned char mode_spi)
 {
 	/* Initialize the parameters for spidev1.0 structure */
-	SPI_Config_init(SPIDEV_BYTES_NUM, SPIDEV1_BUS_SPEED_HZ, SPI_CS_HIGH,
-			SPIDEV_DELAY_US, SPIDEV_DATA_BITS_NUM, SPI_MODE0, &SPI_device1);
+	SPI_Config_init(spi_bytes_no, spi_bus_speed, chip_select,
+			spi_delay, spi_bits_No, mode_spi, &SPI_device1);
 
 	/* Assign the path to the spidev1.0 for use */
 	SPI_device1.spi_dev_path = SPIDEV1_PATH;
