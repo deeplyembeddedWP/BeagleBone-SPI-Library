@@ -40,6 +40,8 @@ SOFTWARE.
 #include<string.h>
 #include<stdint.h>
 #include<unistd.h>
+#include<sys/ioctl.h>
+#include<linux/spi/spidev.h>
 
 /* Static objects for spidev1.0 */
 static SPI_DeviceT SPI_device1;
