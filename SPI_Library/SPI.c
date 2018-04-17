@@ -184,7 +184,7 @@ int SPI_DEV1_init(unsigned long spi_bytes_no, unsigned long spi_bus_speed,
 	}
 
 	/* Set the SPI bus speed in Hz */
-	if(Set_SPI_bits(SPI_device1.fd_spi, SPI_device1.spi_bus_speedHZ) == -1)
+	if(Set_SPI_speed(SPI_device1.fd_spi, SPI_device1.spi_bus_speedHZ) == -1)
 	{
 		perror("SPI: Failed to set SPI bus frequency |");
 		return -1;
